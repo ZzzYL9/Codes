@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>change_room_price</class>
+ <widget class="QDialog" name="change_room_price">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>388</width>
+    <height>345</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-image: url(:/new/prefix1/lanhua.jpg);</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>20</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 255);
+font: 75 14pt &quot;Agency FB&quot;;
+border-image: url(:/new/prefix1/shuijing.jpg);</string>
+   </property>
+   <property name="text">
+    <string>请选择你要修改的房间类型</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>218</y>
+     <width>171</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/shuijing.jpg);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>220</y>
+     <width>101</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/shuijing.jpg);
+color: rgb(0, 0, 0);
+font: 75 11pt &quot;Agency FB&quot;;</string>
+   </property>
+   <property name="text">
+    <string>请输入价格</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>280</y>
+     <width>99</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 11pt &quot;Agency FB&quot;;
+border-image: url(:/new/prefix1/Purple.jpg);
+font: 75 9pt &quot;Agency FB&quot;;
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>确认</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>280</y>
+     <width>99</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 11pt &quot;Agency FB&quot;;
+border-image: url(:/new/prefix1/Purple.jpg);
+font: 75 9pt &quot;Agency FB&quot;;
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_2">
+   <property name="geometry">
+    <rect>
+     <x>51</x>
+     <y>76</y>
+     <width>121</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);
+font: 75 11pt &quot;Agency FB&quot;;
+border-image: url(:/new/prefix1/shuijing.jpg);</string>
+   </property>
+   <property name="text">
+    <string>商务套房</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton">
+   <property name="geometry">
+    <rect>
+     <x>51</x>
+     <y>123</y>
+     <width>131</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);
+font: 75 11pt &quot;Agency FB&quot;;
+border-image: url(:/new/prefix1/shuijing.jpg);</string>
+   </property>
+   <property name="text">
+    <string>豪华单人间</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_3">
+   <property name="geometry">
+    <rect>
+     <x>51</x>
+     <y>170</y>
+     <width>131</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);
+font: 75 11pt &quot;Agency FB&quot;;
+border-image: url(:/new/prefix1/shuijing.jpg);</string>
+   </property>
+   <property name="text">
+    <string>标准单人间</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_5">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>76</y>
+     <width>131</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);
+font: 75 11pt &quot;Agency FB&quot;;
+border-image: url(:/new/prefix1/shuijing.jpg);</string>
+   </property>
+   <property name="text">
+    <string>标准双人间</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_4">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>123</y>
+     <width>131</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);
+font: 75 11pt &quot;Agency FB&quot;;
+border-image: url(:/new/prefix1/shuijing.jpg);</string>
+   </property>
+   <property name="text">
+    <string>豪华双人间</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_6">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>170</y>
+     <width>111</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);
+font: 75 11pt &quot;Agency FB&quot;;
+border-image: url(:/new/prefix1/shuijing.jpg);</string>
+   </property>
+   <property name="text">
+    <string>总统套房</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

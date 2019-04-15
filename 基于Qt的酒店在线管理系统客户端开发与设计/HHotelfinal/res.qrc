@@ -1,0 +1,31 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>head.jpg</file>
+        <file>blueButton.jpg</file>
+        <file>Blue.jpg</file>
+        <file>greensu.jpg</file>
+        <file>login.jpg</file>
+        <file>lineEdit.jpg</file>
+        <file>denglu.jpg</file>
+        <file>muyu.jpg</file>
+        <file>beijing.jpg</file>
+        <file>bluesu.jpg</file>
+        <file>111.jpeg</file>
+        <file>bizhi1.jpg</file>
+        <file>meishi.jpg</file>
+        <file>white.jpg</file>
+        <file>about1.jpg</file>
+        <file>hotel.jpg</file>
+        <file>eye88.png</file>
+        <file>lanhua.jpg</file>
+        <file>shang.jpg</file>
+        <file>xia.jpg</file>
+        <file>lanxin.jpg</file>
+        <file>shang1.jpg</file>
+        <file>xia1.jpg</file>
+        <file>shang2.jpg</file>
+        <file>xia2.jpg</file>
+        <file>muyu1.jpg</file>
+        <file>Purple.jpg</file>
+    </qresource>
+</RCC>

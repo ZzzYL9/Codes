@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/new">
+        <file>image/flag.png</file>
+        <file>image/bomb.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,1546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>803</width>
+    <height>646</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-image: url(:/new/prefix1/blueButton.jpg);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>721</width>
+      <height>577</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>600</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>801</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/new/prefix1/shuijing.jpg);</string>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <widget class="QWidget" name="tab1">
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/new/prefix1/lanhua.jpg);</string>
+     </property>
+     <attribute name="title">
+      <string>客房查询</string>
+     </attribute>
+     <widget class="QRadioButton" name="rb1">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>250</y>
+        <width>140</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>140</width>
+        <height>26</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>140</width>
+        <height>26</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border :0px ;
+color: rgb(0, 0, 0);
+font: 75 10pt &quot;Agency FB&quot;;
+border-image: url(:/new/prefix1/shuijing.jpg);</string>
+      </property>
+      <property name="text">
+       <string>商务套房 </string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rb2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>290</y>
+        <width>140</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>140</width>
+        <height>26</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border :0px ;
+color: rgb(0, 0, 0);
+font: 75 10pt &quot;Agency FB&quot;;
+border-image: url(:/new/prefix1/shuijing.jpg);</string>
+      </property>
+      <property name="text">
+       <string>豪华单人间</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rb3">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>330</y>
+        <width>140</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>140</width>
+        <height>26</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border :0px ;
+color: rgb(0, 0, 0);
+font: 75 10pt &quot;Agency FB&quot;;
+border-image: url(:/new/prefix1/shuijing.jpg);</string>
+      </property>
+      <property name="text">
+       <string>标准单人间</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rb4">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>370</y>
+        <width>140</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>140</width>
+        <height>26</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Agency FB</family>
+        <pointsize>10</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border :0px ;
+color: rgb(0, 0, 0);
+font: 75 10pt &quot;Agency FB&quot;;
+border-image: url(:/new/prefix1/shuijing.jpg);</string>
+      </property>
+      <property name="text">
+       <string>标准双人间</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rb5">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>410</y>
+        <width>140</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>140</width>
+        <height>26</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border :0px ;
+color: rgb(0, 0, 0);
+font: 75 10pt &quot;Agency FB&quot;;
+border-image: url(:/new/prefix1/shuijing.jpg);</string>
+      </property>
+      <property name="text">
+       <string>豪华双人间</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rb6">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>450</y>
+        <width>140</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>140</width>
+        <height>26</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border :0px ;
+color: rgb(0, 0, 0);
+font: 75 10pt &quot;Agency FB&quot;;
+border-image: url(:/new/prefix1/shuijing.jpg);</string>
+      </property>
+      <property name="text">
+       <string>总统套房 </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>240</y>
+        <width>31</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>10000</width>
+        <height>10000</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/shuijing.jpg);</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#0000ff;&quot;&gt;房&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#0000ff;&quot;&gt;间&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#0000ff;&quot;&gt;信&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#0000ff;&quot;&gt;息&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tvRoomInfo">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>249</y>
+        <width>286</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>286</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>286</width>
+        <height>250</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>500</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>400</width>
+        <height>400</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/Purple.jpg);
+color: rgb(255, 255, 255);
+font: 75 10pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>修改房价</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>240</y>
+        <width>31</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>10000</width>
+        <height>10000</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/shuijing.jpg);</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#0000ff;&quot;&gt;房&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#0000ff;&quot;&gt;间&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#0000ff;&quot;&gt;类&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#0000ff;&quot;&gt;型&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>10</y>
+        <width>31</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/shuijing.jpg);</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#0000ff;&quot;&gt;今&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#0000ff;&quot;&gt;日&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#0000ff;&quot;&gt;房&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#0000ff;&quot;&gt;价&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tvPriceInfo">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>11</y>
+        <width>555</width>
+        <height>224</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>555</width>
+        <height>224</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>555</width>
+        <height>224</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab2">
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/new/prefix1/beijing.jpg);</string>
+     </property>
+     <attribute name="title">
+      <string>登记入住</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>691</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid gray;</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QPushButton" name="pbSubmit">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>310</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/new/prefix1/Blue.jpg);
+font: 75 9pt &quot;Agency FB&quot;;
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>确  定</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pbCancle">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>310</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/new/prefix1/Blue.jpg);
+font: 75 9pt &quot;Agency FB&quot;;
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>取  消</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>200</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border :0px ;
+border-image: url(:/new/prefix1/shuijing.jpg);
+font: 75 11pt &quot;Ubuntu&quot;;
+color: rgb(0, 0, 0);
+</string>
+       </property>
+       <property name="text">
+        <string>  房间号码</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>100</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border :0px ;
+border-image: url(:/new/prefix1/shuijing.jpg);
+font: 75 11pt &quot;Ubuntu&quot;;
+color: rgb(0, 0, 0);
+</string>
+       </property>
+       <property name="text">
+        <string>  身份证号</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="leID">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>100</y>
+         <width>261</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border :0px ;
+border-image: url(:/new/prefix1/white.jpg);
+</string>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Normal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>150</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border :0px ;
+font: 75 11pt &quot;Ubuntu&quot;;
+color: rgb(0, 0, 0);
+border-image: url(:/new/prefix1/shuijing.jpg);
+</string>
+       </property>
+       <property name="text">
+        <string>  姓    名</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="leUserName">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>150</y>
+         <width>261</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border :0px ;
+border-image: url(:/new/prefix1/white.jpg);
+
+</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="leRoomID">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>200</y>
+         <width>261</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border :0px ;
+border-image: url(:/new/prefix1/white.jpg);
+
+</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>250</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border :0px ;
+border-image: url(:/new/prefix1/shuijing.jpg);
+font: 75 11pt &quot;Ubuntu&quot;;
+color: rgb(0, 0, 0);
+</string>
+       </property>
+       <property name="text">
+        <string>  入住天数</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="leNumOfNig">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>250</y>
+         <width>261</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border :0px ;
+border-image: url(:/new/prefix1/white.jpg);
+
+</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>100</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 0, 0);
+border-image: url(:/new/prefix1/shuijing.jpg);
+border :0px ;</string>
+       </property>
+       <property name="text">
+        <string>身份证号格式错误</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab5">
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/new/prefix1/meishi.jpg);</string>
+     </property>
+     <attribute name="title">
+      <string>餐饮管理</string>
+     </attribute>
+     <widget class="QTableView" name="food_tableView">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>0</y>
+        <width>261</width>
+        <height>341</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 10pt &quot;Agency FB&quot;;
+color: rgb(0, 0, 255);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_10">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>410</y>
+        <width>101</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/Purple.jpg);
+color: rgb(255, 255, 255);
+font: 75 9pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>用餐登记</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>360</y>
+        <width>251</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/shuijing.jpg);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>360</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+font: 75 10pt &quot;Agency FB&quot;;
+border-image: url(:/new/prefix1/shuijing.jpg);</string>
+      </property>
+      <property name="text">
+       <string> 身份证号</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_13">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>410</y>
+        <width>101</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/Purple.jpg);
+color: rgb(255, 255, 255);
+font: 75 9pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>打包饭菜</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>0</y>
+        <width>71</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>添加菜品</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>60</y>
+        <width>71</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>删除菜品</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>120</y>
+        <width>71</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>修改菜品</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>180</y>
+        <width>71</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>查询菜品</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>300</y>
+        <width>71</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>价格降序</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>240</y>
+        <width>71</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>价格升序</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/new/prefix1/lanhua.jpg);</string>
+     </property>
+     <attribute name="title">
+      <string>洗浴管理</string>
+     </attribute>
+     <widget class="QTableView" name="tableView">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>110</y>
+        <width>271</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/lanhua.jpg);</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>300</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/shuijing.jpg);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_11">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>370</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/Blue.jpg);
+color: rgb(255, 255, 255);
+font: 75 9pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>洗浴登记</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_12">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>370</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/Blue.jpg);
+color: rgb(255, 255, 255);
+font: 75 9pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>取   消</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>10</y>
+        <width>331</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/shuijing.jpg);</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; color:#0055ff;&quot;&gt;天 池 洗 浴 中 心&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>110</y>
+        <width>107</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/shuijing.jpg);
+color: rgb(0, 0, 0);
+font: 75 10pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>普  通  洗  浴</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_3">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>230</y>
+        <width>107</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/shuijing.jpg);
+font: 75 10pt &quot;Agency FB&quot;;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>标  准  按  摩</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_2">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>170</y>
+        <width>107</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/shuijing.jpg);
+font: 75 10pt &quot;Agency FB&quot;;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string>标  准  足  浴</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_4">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>290</y>
+        <width>107</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/shuijing.jpg);
+color: rgb(0, 0, 0);
+font: 75 10pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>标  准  桑  拿</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_23">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>370</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/Blue.jpg);
+color: rgb(255, 255, 255);
+font: 75 9pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>修改价格</string>
+      </property>
+     </widget>
+     <zorder>radioButton</zorder>
+     <zorder>radioButton_3</zorder>
+     <zorder>radioButton_2</zorder>
+     <zorder>radioButton_4</zorder>
+     <zorder>tableView</zorder>
+     <zorder>lineEdit</zorder>
+     <zorder>pushButton_11</zorder>
+     <zorder>pushButton_12</zorder>
+     <zorder>label_12</zorder>
+     <zorder>pushButton_23</zorder>
+    </widget>
+    <widget class="QWidget" name="tab3">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <attribute name="title">
+      <string>退房结算</string>
+     </attribute>
+     <layout class="QGridLayout" name="gridLayout_6">
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border :0px ;
+border-color: rgb(173, 168, 166);</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+        <widget class="QLabel" name="label_7">
+         <property name="geometry">
+          <rect>
+           <x>15</x>
+           <y>15</y>
+           <width>295</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>295</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>295</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/new/prefix1/xia2.jpg);</string>
+         </property>
+         <property name="text">
+          <string>                   身  份  证  号： </string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="leOut_ID">
+         <property name="geometry">
+          <rect>
+           <x>317</x>
+           <y>15</y>
+           <width>179</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>179</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>179</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border :0px ;</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pbOut_Search">
+         <property name="geometry">
+          <rect>
+           <x>503</x>
+           <y>13</y>
+           <width>179</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>179</width>
+           <height>24</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>179</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/new/prefix1/blueButton.jpg);
+font: 75 11pt &quot;Ubuntu&quot;;
+color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>查     询</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_8">
+         <property name="geometry">
+          <rect>
+           <x>16</x>
+           <y>44</y>
+           <width>671</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>1000</width>
+           <height>1000</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/new/prefix1/lanhua.jpg);
+color: rgb(0, 0, 0);
+font: 75 14pt &quot;Agency FB&quot;;</string>
+         </property>
+         <property name="text">
+          <string>                                            入 住 信 息</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_9">
+         <property name="geometry">
+          <rect>
+           <x>15</x>
+           <y>475</y>
+           <width>135</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>135</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>135</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/new/prefix1/xia2.jpg);</string>
+         </property>
+         <property name="text">
+          <string>实际入住天数:</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="leRealdate">
+         <property name="geometry">
+          <rect>
+           <x>157</x>
+           <y>475</y>
+           <width>175</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>175</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>175</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border :0px ;</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_10">
+         <property name="geometry">
+          <rect>
+           <x>15</x>
+           <y>504</y>
+           <width>135</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/new/prefix1/xia2.jpg);</string>
+         </property>
+         <property name="text">
+          <string>应  缴  费  用：</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lePay">
+         <property name="geometry">
+          <rect>
+           <x>157</x>
+           <y>504</y>
+           <width>175</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>175</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>175</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border :0px ;</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pbCheckout">
+         <property name="geometry">
+          <rect>
+           <x>339</x>
+           <y>502</y>
+           <width>179</width>
+           <height>24</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>179</width>
+           <height>24</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>179</width>
+           <height>24</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/new/prefix1/blueButton.jpg);
+font: 75 11pt &quot;Ubuntu&quot;;
+color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="text">
+          <string>退    房</string>
+         </property>
+        </widget>
+        <widget class="QTableView" name="tableView_2">
+         <property name="geometry">
+          <rect>
+           <x>3</x>
+           <y>272</y>
+           <width>691</width>
+           <height>191</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>10000</width>
+           <height>10000</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/new/prefix1/xia2.jpg);</string>
+         </property>
+        </widget>
+        <widget class="QTableView" name="tvQuery">
+         <property name="geometry">
+          <rect>
+           <x>3</x>
+           <y>81</y>
+           <width>691</width>
+           <height>191</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>1000</width>
+           <height>11000</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/new/prefix1/shang2.jpg);</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="tab4">
+     <attribute name="title">
+      <string>记录显示</string>
+     </attribute>
+     <widget class="QTableView" name="tvCheckin">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>2</y>
+        <width>721</width>
+        <height>276</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/shang.jpg);</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tvCheckout">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>276</y>
+        <width>721</width>
+        <height>276</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/xia.jpg);</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/new/prefix1/lanxin.jpg);</string>
+     </property>
+     <attribute name="title">
+      <string>员工信息</string>
+     </attribute>
+     <widget class="QTableView" name="tableView_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>1</y>
+        <width>721</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/lanxin.jpg);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_9">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>510</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>删除员工信息</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>510</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/shuijing.jpg);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_31">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>510</y>
+        <width>111</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>查询员工信息</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tableView_7">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>401</y>
+        <width>721</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/xia1.jpg);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>510</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/shuijing.jpg);</string>
+      </property>
+      <property name="text">
+       <string>员工姓名</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/new/prefix1/about1.jpg);</string>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhNone</set>
+     </property>
+     <attribute name="title">
+      <string>关于系统</string>
+     </attribute>
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>50</y>
+        <width>621</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; color:#ff0000;&quot;&gt;酒店在线管理系统&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#0000ff;&quot;&gt;酒店在线管理系统 Hotel 1.0（MSVC 2015,64 bit） &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#0000ff;&quot;&gt;Built on Apr 14 2018 16:21:39&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#0000ff;&quot;&gt;From revision 7071b61e02&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#0000ff;&quot;&gt;All rights reserved.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#0000ff;&quot;&gt;The program is provied AS IS with NO WARRANTY OF &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#0000ff;&quot;&gt;ANY KIND, INCLUDING THE WARRANTY OF DESIGN,&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#0000ff;&quot;&gt;MERCHANTABILITY AND FITNESS FOR A PARTICULAR &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#0000ff;&quot;&gt;PURPOSE.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#ff0000;&quot;&gt;Author:&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#0000ff;&quot;&gt;Copyright 2017-2018 &lt;/span&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#000000;&quot;&gt;WangHu&lt;/span&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#0000ff;&quot;&gt;. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_32">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>140</y>
+        <width>151</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/hotel.jpg);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

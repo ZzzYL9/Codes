@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>768</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>768</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>中国象棋</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="qtchess.qrc">
+    <normaloff>:/images/chess.png</normaloff>:/images/chess.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLCDNumber" name="timeLeft">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>10</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>75</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>75</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="digitCount">
+     <number>8</number>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Flat</enum>
+    </property>
+    <property name="value" stdset="0">
+     <double>0.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTurn">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>10</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionStart"/>
+    <addaction name="actionNewGame"/>
+    <addaction name="actionFlip"/>
+    <addaction name="actionUndo"/>
+    <addaction name="actionLose"/>
+    <addaction name="actionTie"/>
+    <addaction name="actionSettings"/>
+    <addaction name="actionSave"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>帮助(&amp;H)</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpen"/>
+   <addaction name="actionSave"/>
+   <addaction name="actionStart"/>
+   <addaction name="actionNewGame"/>
+   <addaction name="actionFlip"/>
+   <addaction name="actionUndo"/>
+   <addaction name="actionTie"/>
+   <addaction name="actionLose"/>
+   <addaction name="actionSettings"/>
+   <addaction name="actionAbout"/>
+   <addaction name="separator"/>
+   <addaction name="actionExit"/>
+  </widget>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="qtchess.qrc">
+     <normaloff>:/images/helpabout.png</normaloff>:/images/helpabout.png</iconset>
+   </property>
+   <property name="text">
+    <string>关于(&amp;A)</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="qtchess.qrc">
+     <normaloff>:/images/fileopen.png</normaloff>:/images/fileopen.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开(&amp;O)</string>
+   </property>
+  </action>
+  <action name="actionStart">
+   <property name="icon">
+    <iconset resource="qtchess.qrc">
+     <normaloff>:/images/start.png</normaloff>:/images/start.png</iconset>
+   </property>
+   <property name="text">
+    <string>开始(&amp;S)</string>
+   </property>
+  </action>
+  <action name="actionNewGame">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="qtchess.qrc">
+     <normaloff>:/images/newgame.png</normaloff>:/images/newgame.png</iconset>
+   </property>
+   <property name="text">
+    <string>新局(&amp;N)</string>
+   </property>
+  </action>
+  <action name="actionTie">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="qtchess.qrc">
+     <normaloff>:/images/tie.png</normaloff>:/images/tie.png</iconset>
+   </property>
+   <property name="text">
+    <string>提和(&amp;T)</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="qtchess.qrc">
+     <normaloff>:/images/fallback.png</normaloff>:/images/fallback.png</iconset>
+   </property>
+   <property name="text">
+    <string>悔棋(&amp;U)</string>
+   </property>
+  </action>
+  <action name="actionLose">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="qtchess.qrc">
+     <normaloff>:/images/fail.png</normaloff>:/images/fail.png</iconset>
+   </property>
+   <property name="text">
+    <string>认输(&amp;L)</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="qtchess.qrc">
+     <normaloff>:/images/fileexit.png</normaloff>:/images/fileexit.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出(&amp;E)</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="qtchess.qrc">
+     <normaloff>:/images/settings.png</normaloff>:/images/settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>首选项(&amp;P)</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="qtchess.qrc">
+     <normaloff>:/images/filesave.png</normaloff>:/images/filesave.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存(&amp;S)</string>
+   </property>
+  </action>
+  <action name="actionFlip">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="qtchess.qrc">
+     <normaloff>:/images/flip.png</normaloff>:/images/flip.png</iconset>
+   </property>
+   <property name="text">
+    <string>翻转棋盘(&amp;R)</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="qtchess.qrc"/>
+ </resources>
+ <connections/>
+</ui>
