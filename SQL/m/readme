@@ -1,0 +1,8 @@
+该程序实现了一个简单的sql
+将MySQL重新封装
+通过解析自己的输入的语句操作数据库
+
+编译文件命令
+    g++ -c my_sql.cpp
+    g++ -c main.cpp
+    g++ main.o my_sql.o -omy_sql -L /usr/lib/mysql -lmysqlclient
