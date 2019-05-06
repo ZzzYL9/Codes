@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/login3.jpg</file>
+        <file>images/beautiful.jpg</file>
+        <file>images/bigBed.jpg</file>
+        <file>images/chaxun.jpg</file>
+        <file>images/checkout.jpg</file>
+        <file>images/guazhang.jpg</file>
+        <file>images/kefang.jpg</file>
+        <file>images/registart.jpg</file>
+        <file>images/rijie.jpg</file>
+        <file>images/shezhi.png</file>
+        <file>images/transroom.jpg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainwindow</class>
+ <widget class="QWidget" name="mainwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>986</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QTabWidget" name="Tab">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>991</width>
+     <height>621</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>400</width>
+     <height>400</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1000</width>
+     <height>1000</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(104, 115, 166);
+</string>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="tab_2">
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color:rgb(233, 236, 243);
+    min-height:20;
+    border-style:solid;
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 rgb(226,236,241),stop: 0.3 rgb(33,184,150),stop: 1 rgb(29,170,140));
+    border:1px;
+    border-radius:10px;padding:2px 4px;/*border-radius控制圆角大小*/}
+QPushButton:hover{  /*鼠标放上后*/
+    color:rgb(233, 236, 243);
+    min-height:20;
+    border-style:solid;
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 rgb(226,236,241),stop: 0.3 rgb(37,189,252),stop: 1 rgb(32,170,240));
+    border:1px;
+    border-radius:10px;padding:2px 4px;}
+QPushButton:pressed{ /*按下按钮后*/
+    color:rgb(233, 236, 243);
+    min-height:20;
+    border-style:solid;
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 rgb(226,236,241),stop: 0.3 rgb(38,190,255),stop: 1 rgb(33,184,240));
+    border:1px;
+    border-radius:10px;padding:2px 4px; };</string>
+    </property>
+    <attribute name="title">
+     <string>客房管理</string>
+    </attribute>
+    <widget class="QTableWidget" name="controTableWidget">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>921</width>
+       <height>451</height>
+      </rect>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::AnyKeyPressed</set>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::ExtendedSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="textElideMode">
+      <enum>Qt::ElideRight</enum>
+     </property>
+     <property name="showGrid">
+      <bool>true</bool>
+     </property>
+     <property name="gridStyle">
+      <enum>Qt::CustomDashLine</enum>
+     </property>
+     <property name="sortingEnabled">
+      <bool>false</bool>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>180</number>
+     </attribute>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>30</number>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>100</number>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>房间图片</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>房间号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>价格</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>类型</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>房间状态</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>10</y>
+       <width>461</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLineEdit" name="findEdit">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(251, 255, 248);
+border-style:outset;
+border-width:2px;
+border-radius:10px;
+border-color:gray;
+padding:3px;</string>
+        </property>
+        <property name="placeholderText">
+         <string>请输入房间号</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="findBtn">
+        <property name="text">
+         <string>查询</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>138</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="outBtn">
+        <property name="text">
+         <string>注销</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color:rgb(233, 236, 243);
+    min-height:20;
+    border-style:solid;
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 rgb(226,236,241),stop: 0.3 rgb(33,184,150),stop: 1 rgb(29,170,140));
+    border:1px;
+    border-radius:10px;padding:2px 4px;/*border-radius控制圆角大小*/}
+QPushButton:hover{  /*鼠标放上后*/
+    color:rgb(233, 236, 243);
+    min-height:20;
+    border-style:solid;
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 rgb(226,236,241),stop: 0.3 rgb(37,189,252),stop: 1 rgb(32,170,240));
+    border:1px;
+    border-radius:10px;padding:2px 4px;}
+QPushButton:pressed{ /*按下按钮后*/
+    color:rgb(233, 236, 243);
+    min-height:20;
+    border-style:solid;
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 rgb(226,236,241),stop: 0.3 rgb(38,190,255),stop: 1 rgb(33,184,240));
+    border:1px;
+    border-radius:10px;padding:2px 4px; };</string>
+    </property>
+    <attribute name="title">
+     <string>挂帐管理</string>
+    </attribute>
+    <widget class="QTableWidget" name="debtTableWidgt">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>60</y>
+       <width>771</width>
+       <height>451</height>
+      </rect>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustIgnored</enum>
+     </property>
+     <property name="autoScroll">
+      <bool>true</bool>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="sortingEnabled">
+      <bool>false</bool>
+     </property>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>房间号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>挂帐单位</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>电话号码</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>入住时间</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>退房时间</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>住宿天数</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>消费金额</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>20</y>
+       <width>421</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLineEdit" name="findRoomDebtEdit">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(251, 255, 248);
+border-style:outset;
+border-width:2px;
+border-radius:10px;
+border-color:gray;
+padding:3px;</string>
+        </property>
+        <property name="placeholderText">
+         <string>请输入房间号</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>98</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="CheckoutButton">
+        <property name="text">
+         <string>结帐</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color:rgb(233, 236, 243);
+    min-height:20;
+    border-style:solid;
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 rgb(226,236,241),stop: 0.3 rgb(33,184,150),stop: 1 rgb(29,170,140));
+    border:1px;
+    border-radius:10px;padding:2px 4px;/*border-radius控制圆角大小*/}
+QPushButton:hover{  /*鼠标放上后*/
+    color:rgb(233, 236, 243);
+    min-height:20;
+    border-style:solid;
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 rgb(226,236,241),stop: 0.3 rgb(37,189,252),stop: 1 rgb(32,170,240));
+    border:1px;
+    border-radius:10px;padding:2px 4px;}
+QPushButton:pressed{ /*按下按钮后*/
+    color:rgb(233, 236, 243);
+    min-height:20;
+    border-style:solid;
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 rgb(226,236,241),stop: 0.3 rgb(38,190,255),stop: 1 rgb(33,184,240));
+    border:1px;
+    border-radius:10px;padding:2px 4px; };</string>
+    </property>
+    <attribute name="title">
+     <string>查询统计</string>
+    </attribute>
+    <widget class="QTableWidget" name="statisticsTableWidget">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>80</y>
+       <width>731</width>
+       <height>411</height>
+      </rect>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <column>
+      <property name="text">
+       <string>房间号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>房间类型</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>用户姓名</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>消费金额</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>开始时间</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>结束时间</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>120</y>
+       <width>95</width>
+       <height>318</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <spacer name="verticalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="BookButton">
+        <property name="text">
+         <string>预订房查询</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>58</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="AccommodationButton">
+        <property name="text">
+         <string>住宿查询</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="RetreatButton">
+        <property name="text">
+         <string>退宿查询 </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_5">
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color:rgb(233, 236, 243);
+    min-height:20;
+    border-style:solid;
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 rgb(226,236,241),stop: 0.3 rgb(33,184,150),stop: 1 rgb(29,170,140));
+    border:1px;
+    border-radius:10px;padding:2px 4px;/*border-radius控制圆角大小*/}
+QPushButton:hover{  /*鼠标放上后*/
+    color:rgb(233, 236, 243);
+    min-height:20;
+    border-style:solid;
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 rgb(226,236,241),stop: 0.3 rgb(37,189,252),stop: 1 rgb(32,170,240));
+    border:1px;
+    border-radius:10px;padding:2px 4px;}
+QPushButton:pressed{ /*按下按钮后*/
+    color:rgb(233, 236, 243);
+    min-height:20;
+    border-style:solid;
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 rgb(226,236,241),stop: 0.3 rgb(38,190,255),stop: 1 rgb(33,184,240));
+    border:1px;
+    border-radius:10px;padding:2px 4px; };</string>
+    </property>
+    <attribute name="title">
+     <string>日结</string>
+    </attribute>
+    <widget class="QTableWidget" name="dayCheckoutTableWidget">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>70</y>
+       <width>761</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <column>
+      <property name="text">
+       <string>房间号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>用户名</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>入住时间</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>退房时间</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>房间类型</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>消费金额</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>20</y>
+       <width>461</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLineEdit" name="findRoomIdEdit">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(251, 255, 248);
+border-style:outset;
+border-width:2px;
+border-radius:10px;
+border-color:gray;
+padding:3px;</string>
+        </property>
+        <property name="placeholderText">
+         <string>请输入房间号</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="findRoomIdEdit_2">
+        <property name="text">
+         <string>查询</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>138</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_6">
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color:rgb(233, 236, 243);
+    min-height:20;
+    border-style:solid;
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 rgb(226,236,241),stop: 0.3 rgb(33,184,150),stop: 1 rgb(29,170,140));
+    border:1px;
+    border-radius:10px;padding:2px 4px;/*border-radius控制圆角大小*/}
+QPushButton:hover{  /*鼠标放上后*/
+    color:rgb(233, 236, 243);
+    min-height:20;
+    border-style:solid;
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 rgb(226,236,241),stop: 0.3 rgb(37,189,252),stop: 1 rgb(32,170,240));
+    border:1px;
+    border-radius:10px;padding:2px 4px;}
+QPushButton:pressed{ /*按下按钮后*/
+    color:rgb(233, 236, 243);
+    min-height:20;
+    border-style:solid;
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 rgb(226,236,241),stop: 0.3 rgb(38,190,255),stop: 1 rgb(33,184,240));
+    border:1px;
+    border-radius:10px;padding:2px 4px; };</string>
+    </property>
+    <attribute name="title">
+     <string>系统设置</string>
+    </attribute>
+    <widget class="QPushButton" name="InitializationButton">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>430</y>
+       <width>88</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>初始化数据库</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="systemTableWidet">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>40</y>
+       <width>511</width>
+       <height>361</height>
+      </rect>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <column>
+      <property name="text">
+       <string>工号</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>姓名</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>职位</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>电话号码</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="ChangePasswordButton">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>430</y>
+       <width>88</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>修改密码</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>661</x>
+       <y>71</y>
+       <width>241</width>
+       <height>361</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>    工号：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="workIdEdit"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>    姓名:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="nameEdit"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>电话号码:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="phoneNum"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>   密码:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="pawEdit">
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>确认密码:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="btnEdit">
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>确定修改</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>取消</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
