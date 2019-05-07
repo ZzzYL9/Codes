@@ -64,8 +64,11 @@ MainWindow::MainWindow(QWidget *parent) :
 
     this->setWindowTitle(tr("动态网络拓扑显示系统"));
     image = QImage(1320,682,QImage::Format_RGB32);  //画布的初始化大小设为600*500，使用32位颜色
-    QColor backColor = qRgb(255,255,255);    //画布初始化背景色使用白色
+    QColor backColor = qRgb(170, 170, 255);    //画布初始化背景色使用白色
     image.fill(backColor);//对画布进行填充
+
+    QFont font("Microsoft YaHei");
+    ui->label->setFont(font);
 
     read_d1();
     Paint_init();
@@ -828,7 +831,7 @@ void MainWindow::on_one_Btn_clicked()
     ui->stackedWidget->setCurrentIndex(1);
     update();
     image = QImage(1320,682,QImage::Format_RGB32);  //画布的初始化大小设为600*500，使用32位颜色
-    QColor backColor = qRgb(255,255,255);    //画布初始化背景色使用白色
+    QColor backColor = qRgb(219, 187, 255);    //画布初始化背景色使用白色
     image.fill(backColor);//对画布进行填充
     read_p1();
     read_d1();
@@ -840,7 +843,7 @@ void MainWindow::on_two_Btn_clicked()
     ui->stackedWidget->setCurrentIndex(2);
     update();
     image = QImage(1320,682,QImage::Format_RGB32);  //画布的初始化大小设为600*500，使用32位颜色
-    QColor backColor = qRgb(255,255,255);    //画布初始化背景色使用白色
+    QColor backColor = qRgb(192, 216, 255);    //画布初始化背景色使用白色
     image.fill(backColor);//对画布进行填充
     read_p2();
     read_d2();
@@ -852,7 +855,7 @@ void MainWindow::on_three_Btn_clicked()
     ui->stackedWidget->setCurrentIndex(3);
     update();
     image = QImage(1320,682,QImage::Format_RGB32);  //画布的初始化大小设为600*500，使用32位颜色
-    QColor backColor = qRgb(255,255,255);    //画布初始化背景色使用白色
+    QColor backColor = qRgb(255, 235, 225);    //画布初始化背景色使用白色
     image.fill(backColor);//对画布进行填充
     read_p3();
     read_d3();
