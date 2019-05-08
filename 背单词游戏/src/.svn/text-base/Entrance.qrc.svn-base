@@ -1,0 +1,39 @@
+<RCC>
+  <qresource prefix="/Entrance" >
+    <file>Images/viewmaximized.png</file>
+    <file>Images/ni_png_2_0876.png</file>
+    <file>Images/ni_png_2_0837.png</file>
+    <file>Images/text_list_numbers.png</file>
+    <file>Images/Calendar.png</file>
+    <file>Images/Winamp.png</file>
+    <file>Images/Smile.png</file>
+    <file>Images/Floppy2.png</file>
+    <file>Images/Help.png</file>
+    <file>Images/Home.png</file>
+    <file>Images/MyWords.png</file>
+    <file>Images/Notepad2.png</file>
+    <file>Images/Option2.png</file>
+    <file>Images/Package_02.png</file>
+    <file>Images/Up.png</file>
+    <file>Images/User_02.png</file>
+    <file>Images/add_user.png</file>
+    <file>Images/apply.png</file>
+    <file>Images/arrow_switch.png</file>
+    <file>Images/button_cancel.png</file>
+    <file>Images/copy.png</file>
+    <file>Images/delete_user.png</file>
+    <file>Images/edit_remove.png</file>
+    <file>Images/editdelete.png</file>
+    <file>Images/editundo.png</file>
+    <file>Images/exit.png</file>
+    <file>Images/leftarrow.png</file>
+    <file>Images/new.png</file>
+    <file>Images/ni_png_2_0240.png</file>
+    <file>Images/ni_png_2_0291.png</file>
+    <file>Images/ni_png_2_1914.png</file>
+    <file>Images/player_play.png</file>
+    <file>Images/rightarrow.png</file>
+    <file>Images/star.png</file>
+    <file>Images/think.png</file>
+  </qresource>
+</RCC>

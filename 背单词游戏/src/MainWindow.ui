@@ -1,0 +1,1038 @@
+<ui version="4.0" >
+ <class>MainWindowClass</class>
+ <widget class="QMainWindow" name="MainWindowClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>529</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>MyWords</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="Entrance.qrc" >
+    <normaloff>:/Entrance/Images/MyWords.png</normaloff>:/Entrance/Images/MyWords.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>21</y>
+     <width>616</width>
+     <height>508</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" >
+    <property name="leftMargin" >
+     <number>0</number>
+    </property>
+    <property name="topMargin" >
+     <number>5</number>
+    </property>
+    <property name="rightMargin" >
+     <number>5</number>
+    </property>
+    <property name="bottomMargin" >
+     <number>5</number>
+    </property>
+    <item>
+     <widget class="QSplitter" name="splitterLeft" >
+      <property name="orientation" >
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="PoppingTabWidget" name="tabWidgetLeft" >
+       <property name="sizePolicy" >
+        <sizepolicy vsizetype="Expanding" hsizetype="Preferred" >
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="tabPosition" >
+        <enum>QTabWidget::East</enum>
+       </property>
+       <property name="currentIndex" >
+        <number>0</number>
+       </property>
+       <property name="iconSize" >
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+       <widget class="QWidget" name="tabPlan" >
+        <property name="geometry" >
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>240</width>
+          <height>492</height>
+         </rect>
+        </property>
+        <attribute name="title" >
+         <string>学习计划</string>
+        </attribute>
+        <attribute name="icon" >
+         <iconset resource="Entrance.qrc" >
+          <normaloff>:/Entrance/Images/Calendar.png</normaloff>:/Entrance/Images/Calendar.png</iconset>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout" >
+         <property name="margin" >
+          <number>5</number>
+         </property>
+         <item>
+          <widget class="QGroupBox" name="groupBox" >
+           <property name="title" >
+            <string>计划</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout" >
+            <item row="3" column="2" colspan="2" >
+             <layout class="QHBoxLayout" name="horizontalLayout" >
+              <property name="spacing" >
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QPushButton" name="buttonPrevUnit" >
+                <property name="maximumSize" >
+                 <size>
+                  <width>50</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="toolTip" >
+                 <string>上一单元</string>
+                </property>
+                <property name="text" >
+                 <string>&lt;-</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="buttonNextUnit" >
+                <property name="maximumSize" >
+                 <size>
+                  <width>50</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="toolTip" >
+                 <string>下一单元</string>
+                </property>
+                <property name="text" >
+                 <string>-></string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="0" column="0" >
+             <widget class="QLabel" name="label" >
+              <property name="text" >
+               <string>当前词典</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1" colspan="3" >
+             <widget class="QComboBox" name="comboBox" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Fixed" hsizetype="MinimumExpanding" >
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" >
+             <widget class="QLabel" name="label_2" >
+              <property name="text" >
+               <string>单词总数</string>
+              </property>
+              <property name="alignment" >
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1" colspan="3" >
+             <widget class="QLineEdit" name="lineEditWordCount" >
+              <property name="readOnly" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0" >
+             <widget class="QLabel" name="label_3" >
+              <property name="text" >
+               <string>单元大小</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1" >
+             <widget class="QSpinBox" name="spinBoxUnitSize" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Fixed" hsizetype="MinimumExpanding" >
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimum" >
+               <number>1</number>
+              </property>
+              <property name="maximum" >
+               <number>999999</number>
+              </property>
+              <property name="value" >
+               <number>200</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2" >
+             <widget class="QLabel" name="label_4" >
+              <property name="text" >
+               <string>单元个数</string>
+              </property>
+              <property name="alignment" >
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="3" >
+             <widget class="QLineEdit" name="lineEditUnitCount" >
+              <property name="maximumSize" >
+               <size>
+                <width>40</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="readOnly" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0" >
+             <widget class="QLabel" name="label_5" >
+              <property name="text" >
+               <string>当前单元</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1" >
+             <widget class="QSpinBox" name="spinBoxUnit" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="buttonSymbols" >
+               <enum>QAbstractSpinBox::UpDownArrows</enum>
+              </property>
+              <property name="minimum" >
+               <number>1</number>
+              </property>
+              <property name="maximum" >
+               <number>1000</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_2" >
+           <property name="title" >
+            <string>进度</string>
+           </property>
+           <layout class="QGridLayout" >
+            <item row="0" column="0" >
+             <widget class="QCheckBox" name="checkBoxNew" >
+              <property name="text" >
+               <string>新词</string>
+              </property>
+              <property name="checked" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" >
+             <widget class="QCheckBox" name="checkBoxUnfamiliar" >
+              <property name="text" >
+               <string>模糊</string>
+              </property>
+              <property name="checked" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1" >
+             <widget class="QSpinBox" name="spinBoxThreshold1" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="prefix" >
+               <string>得分>=</string>
+              </property>
+              <property name="minimum" >
+               <number>1</number>
+              </property>
+              <property name="maximum" >
+               <number>100</number>
+              </property>
+              <property name="value" >
+               <number>2</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0" >
+             <widget class="QCheckBox" name="checkBoxFamiliar" >
+              <property name="text" >
+               <string>熟悉</string>
+              </property>
+              <property name="checked" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1" >
+             <widget class="QSpinBox" name="spinBoxThreshold2" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="prefix" >
+               <string>得分>=</string>
+              </property>
+              <property name="minimum" >
+               <number>2</number>
+              </property>
+              <property name="maximum" >
+               <number>100</number>
+              </property>
+              <property name="value" >
+               <number>5</number>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0" colspan="2" >
+             <widget class="PieView" name="pieView" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Expanding" hsizetype="Expanding" >
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_3" >
+           <property name="maximumSize" >
+            <size>
+             <width>16777215</width>
+             <height>150</height>
+            </size>
+           </property>
+           <property name="title" >
+            <string>备忘录</string>
+           </property>
+           <layout class="QHBoxLayout" >
+            <property name="spacing" >
+             <number>5</number>
+            </property>
+            <property name="leftMargin" >
+             <number>5</number>
+            </property>
+            <property name="topMargin" >
+             <number>0</number>
+            </property>
+            <property name="rightMargin" >
+             <number>5</number>
+            </property>
+            <property name="bottomMargin" >
+             <number>5</number>
+            </property>
+            <item>
+             <widget class="QTextEdit" name="textEditMemo" />
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tabSearch" >
+        <property name="geometry" >
+         <rect>
+          <x>4</x>
+          <y>30</y>
+          <width>239</width>
+          <height>492</height>
+         </rect>
+        </property>
+        <attribute name="title" >
+         <string>搜索</string>
+        </attribute>
+        <attribute name="icon" >
+         <iconset resource="Entrance.qrc" >
+          <normaloff>:/Entrance/Images/ni_png_2_1914.png</normaloff>:/Entrance/Images/ni_png_2_1914.png</iconset>
+        </attribute>
+        <layout class="QVBoxLayout" >
+         <property name="margin" >
+          <number>5</number>
+         </property>
+         <item>
+          <widget class="SearchTab" native="1" name="searchTab" />
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QSplitter" name="splitterVertical" >
+       <property name="sizePolicy" >
+        <sizepolicy vsizetype="Expanding" hsizetype="Ignored" >
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="orientation" >
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="MyTableView" name="tableView" >
+        <property name="contextMenuPolicy" >
+         <enum>Qt::CustomContextMenu</enum>
+        </property>
+        <property name="editTriggers" >
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <property name="selectionMode" >
+         <enum>QAbstractItemView::SingleSelection</enum>
+        </property>
+        <property name="selectionBehavior" >
+         <enum>QAbstractItemView::SelectRows</enum>
+        </property>
+        <property name="sortingEnabled" >
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBoxDetail" >
+        <property name="maximumSize" >
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="title" >
+         <string>详细信息</string>
+        </property>
+        <layout class="QVBoxLayout" >
+         <property name="spacing" >
+          <number>2</number>
+         </property>
+         <property name="leftMargin" >
+          <number>5</number>
+         </property>
+         <property name="topMargin" >
+          <number>0</number>
+         </property>
+         <property name="rightMargin" >
+          <number>5</number>
+         </property>
+         <property name="bottomMargin" >
+          <number>5</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="frameControl" >
+           <layout class="QHBoxLayout" >
+            <property name="spacing" >
+             <number>3</number>
+            </property>
+            <property name="margin" >
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QPushButton" name="buttonAutoPlay" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="toolTip" >
+               <string>自动播放（Ctrl+P）</string>
+              </property>
+              <property name="icon" >
+               <iconset resource="Entrance.qrc" >
+                <normaloff>:/Entrance/Images/player_play.png</normaloff>:/Entrance/Images/player_play.png</iconset>
+              </property>
+              <property name="shortcut" >
+               <string>Ctrl+P</string>
+              </property>
+              <property name="checkable" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="spinBoxDelay" >
+              <property name="maximumSize" >
+               <size>
+                <width>50</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="suffix" >
+               <string>秒</string>
+              </property>
+              <property name="minimum" >
+               <number>1</number>
+              </property>
+              <property name="value" >
+               <number>5</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="buttonRecite" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="toolTip" >
+               <string>背诵模式（Ctrl+M）</string>
+              </property>
+              <property name="icon" >
+               <iconset resource="Entrance.qrc" >
+                <normaloff>:/Entrance/Images/think.png</normaloff>:/Entrance/Images/think.png</iconset>
+              </property>
+              <property name="shortcut" >
+               <string>Ctrl+M</string>
+              </property>
+              <property name="checkable" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="buttonShuffle" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="toolTip" >
+               <string>乱序（Ctrl+S）</string>
+              </property>
+              <property name="icon" >
+               <iconset resource="Entrance.qrc" >
+                <normaloff>:/Entrance/Images/arrow_switch.png</normaloff>:/Entrance/Images/arrow_switch.png</iconset>
+              </property>
+              <property name="shortcut" >
+               <string>Ctrl+S</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="buttonUpper" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="toolTip" >
+               <string>大写显示（Ctrl+U）</string>
+              </property>
+              <property name="icon" >
+               <iconset resource="Entrance.qrc" >
+                <normaloff>:/Entrance/Images/Up.png</normaloff>:/Entrance/Images/Up.png</iconset>
+              </property>
+              <property name="shortcut" >
+               <string>Ctrl+U</string>
+              </property>
+              <property name="checkable" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="buttonChinese" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="toolTip" >
+               <string>查看解释（双击）</string>
+              </property>
+              <property name="layoutDirection" >
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="icon" >
+               <iconset resource="Entrance.qrc" >
+                <normaloff>:/Entrance/Images/Help.png</normaloff>:/Entrance/Images/Help.png</iconset>
+              </property>
+              <property name="shortcut" >
+               <string>Ctrl+H</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="buttonRight" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="toolTip" >
+               <string>答对（右键）</string>
+              </property>
+              <property name="icon" >
+               <iconset resource="Entrance.qrc" >
+                <normaloff>:/Entrance/Images/apply.png</normaloff>:/Entrance/Images/apply.png</iconset>
+              </property>
+              <property name="shortcut" >
+               <string>Right</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="buttonWrong" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="toolTip" >
+               <string>答错（中键）</string>
+              </property>
+              <property name="icon" >
+               <iconset resource="Entrance.qrc" >
+                <normaloff>:/Entrance/Images/button_cancel.png</normaloff>:/Entrance/Images/button_cancel.png</iconset>
+              </property>
+              <property name="shortcut" >
+               <string>Left</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="buttonSetFamiliar" >
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="toolTip" >
+               <string>设为熟词</string>
+              </property>
+              <property name="icon" >
+               <iconset resource="Entrance.qrc" >
+                <normaloff>:/Entrance/Images/Smile.png</normaloff>:/Entrance/Images/Smile.png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer>
+              <property name="orientation" >
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType" >
+               <enum>QSizePolicy::Preferred</enum>
+              </property>
+              <property name="sizeHint" stdset="0" >
+               <size>
+                <width>16</width>
+                <height>24</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="buttonBack" >
+              <property name="enabled" >
+               <bool>false</bool>
+              </property>
+              <property name="sizePolicy" >
+               <sizepolicy vsizetype="Fixed" hsizetype="Expanding" >
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="toolTip" >
+               <string>回退</string>
+              </property>
+              <property name="icon" >
+               <iconset resource="Entrance.qrc" >
+                <normaloff>:/Entrance/Images/editundo.png</normaloff>:/Entrance/Images/editundo.png</iconset>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="buttonHideControlBar" >
+              <property name="maximumSize" >
+               <size>
+                <width>0</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="shortcut" >
+               <string>Ctrl+B</string>
+              </property>
+              <property name="checkable" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="buttonExitFullScreen" >
+              <property name="maximumSize" >
+               <size>
+                <width>0</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="shortcut" >
+               <string>Esc</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="DetailWidget" native="1" name="detailWidget" >
+           <property name="sizePolicy" >
+            <sizepolicy vsizetype="Expanding" hsizetype="Preferred" >
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>700</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile" >
+    <property name="title" >
+     <string>文件</string>
+    </property>
+    <addaction name="actionChangeUser" />
+    <addaction name="actionSetting" />
+    <addaction name="actionBackup" />
+    <addaction name="actionMiniPlayer" />
+    <addaction name="separator" />
+    <addaction name="actionFullScreen" />
+    <addaction name="actionHideControlBar" />
+    <addaction name="separator" />
+    <addaction name="actionQuit" />
+   </widget>
+   <widget class="QMenu" name="menuAbout" >
+    <property name="title" >
+     <string>帮助</string>
+    </property>
+    <addaction name="actionAbout" />
+   </widget>
+   <widget class="QMenu" name="menuDict" >
+    <property name="title" >
+     <string>词典</string>
+    </property>
+    <addaction name="actionLoadDict" />
+    <addaction name="actionDelDict" />
+    <addaction name="actionDelWord" />
+    <addaction name="actionExport" />
+   </widget>
+   <addaction name="menuFile" />
+   <addaction name="menuDict" />
+   <addaction name="menuAbout" />
+  </widget>
+  <widget class="QDockWidget" name="dockWidgetGroup" >
+   <property name="geometry" >
+    <rect>
+     <x>620</x>
+     <y>21</y>
+     <width>80</width>
+     <height>252</height>
+    </rect>
+   </property>
+   <property name="windowTitle" >
+    <string>相关词</string>
+   </property>
+   <attribute name="dockWidgetArea" >
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents" >
+    <property name="geometry" >
+     <rect>
+      <x>0</x>
+      <y>22</y>
+      <width>80</width>
+      <height>230</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" >
+     <property name="margin" >
+      <number>5</number>
+     </property>
+     <item>
+      <widget class="GroupWidget" native="1" name="groupWidget" >
+       <property name="sizePolicy" >
+        <sizepolicy vsizetype="Expanding" hsizetype="Expanding" >
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidgetCognate" >
+   <property name="geometry" >
+    <rect>
+     <x>620</x>
+     <y>277</y>
+     <width>80</width>
+     <height>252</height>
+    </rect>
+   </property>
+   <property name="windowTitle" >
+    <string>同源词</string>
+   </property>
+   <attribute name="dockWidgetArea" >
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2" >
+    <property name="geometry" >
+     <rect>
+      <x>0</x>
+      <y>22</y>
+      <width>80</width>
+      <height>230</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" >
+     <property name="margin" >
+      <number>5</number>
+     </property>
+     <item>
+      <widget class="CognateWidget" native="1" name="cognateWidget" >
+       <property name="sizePolicy" >
+        <sizepolicy vsizetype="Expanding" hsizetype="Expanding" >
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actionQuit" >
+   <property name="icon" >
+    <iconset resource="Entrance.qrc" >
+     <normaloff>:/Entrance/Images/exit.png</normaloff>:/Entrance/Images/exit.png</iconset>
+   </property>
+   <property name="text" >
+    <string>退出</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionAbout" >
+   <property name="icon" >
+    <iconset resource="Entrance.qrc" >
+     <normaloff>:/Entrance/Images/Help.png</normaloff>:/Entrance/Images/Help.png</iconset>
+   </property>
+   <property name="text" >
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="actionSetting" >
+   <property name="icon" >
+    <iconset resource="Entrance.qrc" >
+     <normaloff>:/Entrance/Images/Option2.png</normaloff>:/Entrance/Images/Option2.png</iconset>
+   </property>
+   <property name="text" >
+    <string>选项</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionLoadDict" >
+   <property name="icon" >
+    <iconset resource="Entrance.qrc" >
+     <normaloff>:/Entrance/Images/ni_png_2_0240.png</normaloff>:/Entrance/Images/ni_png_2_0240.png</iconset>
+   </property>
+   <property name="text" >
+    <string>导入词典</string>
+   </property>
+  </action>
+  <action name="actionDelDict" >
+   <property name="icon" >
+    <iconset resource="Entrance.qrc" >
+     <normaloff>:/Entrance/Images/ni_png_2_0291.png</normaloff>:/Entrance/Images/ni_png_2_0291.png</iconset>
+   </property>
+   <property name="text" >
+    <string>删除词典</string>
+   </property>
+  </action>
+  <action name="actionDelWord" >
+   <property name="icon" >
+    <iconset resource="Entrance.qrc" >
+     <normaloff>:/Entrance/Images/editdelete.png</normaloff>:/Entrance/Images/editdelete.png</iconset>
+   </property>
+   <property name="text" >
+    <string>删除单词</string>
+   </property>
+  </action>
+  <action name="actionChangeUser" >
+   <property name="icon" >
+    <iconset resource="Entrance.qrc" >
+     <normaloff>:/Entrance/Images/User_02.png</normaloff>:/Entrance/Images/User_02.png</iconset>
+   </property>
+   <property name="text" >
+    <string>更换用户</string>
+   </property>
+  </action>
+  <action name="actionExport" >
+   <property name="icon" >
+    <iconset resource="Entrance.qrc" >
+     <normaloff>:/Entrance/Images/ni_png_2_0837.png</normaloff>:/Entrance/Images/ni_png_2_0837.png</iconset>
+   </property>
+   <property name="text" >
+    <string>导出单词</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionFullScreen" >
+   <property name="icon" >
+    <iconset resource="Entrance.qrc" >
+     <normaloff>:/Entrance/Images/viewmaximized.png</normaloff>:/Entrance/Images/viewmaximized.png</iconset>
+   </property>
+   <property name="text" >
+    <string>全屏</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionHideControlBar" >
+   <property name="checkable" >
+    <bool>true</bool>
+   </property>
+   <property name="text" >
+    <string>隐藏控制按钮</string>
+   </property>
+  </action>
+  <action name="actionBackup" >
+   <property name="icon" >
+    <iconset resource="Entrance.qrc" >
+     <normaloff>:/Entrance/Images/Floppy2.png</normaloff>:/Entrance/Images/Floppy2.png</iconset>
+   </property>
+   <property name="text" >
+    <string>备份数据库</string>
+   </property>
+  </action>
+  <action name="actionMiniPlayer" >
+   <property name="icon" >
+    <iconset resource="Entrance.qrc" >
+     <normaloff>:/Entrance/Images/Winamp.png</normaloff>:/Entrance/Images/Winamp.png</iconset>
+   </property>
+   <property name="text" >
+    <string>迷你模式</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <customwidgets>
+  <customwidget>
+   <class>PieView</class>
+   <extends>QTableView</extends>
+   <header>pieview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>GroupWidget</class>
+   <extends>QWidget</extends>
+   <header>GroupWidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>MyTableView</class>
+   <extends>QTableView</extends>
+   <header>MyTableView.h</header>
+  </customwidget>
+  <customwidget>
+   <class>PoppingTabWidget</class>
+   <extends>QTabWidget</extends>
+   <header>PoppingTabWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CognateWidget</class>
+   <extends>QWidget</extends>
+   <header>CognateWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SearchTab</class>
+   <extends>QWidget</extends>
+   <header>SearchTab.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DetailWidget</class>
+   <extends>QWidget</extends>
+   <header>DetailWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="Entrance.qrc" />
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionQuit</sender>
+   <signal>activated()</signal>
+   <receiver>MainWindowClass</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>445</x>
+     <y>338</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,154 @@
+<ui version="4.0" >
+ <class>MiniPlayerClass</class>
+ <widget class="QDialog" name="MiniPlayerClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>310</width>
+    <height>387</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>MiniPlayer</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" >
+   <property name="sizeConstraint" >
+    <enum>QLayout::SetFixedSize</enum>
+   </property>
+   <property name="margin" >
+    <number>5</number>
+   </property>
+   <property name="spacing" >
+    <number>3</number>
+   </property>
+   <item row="1" column="0" >
+    <widget class="QPushButton" name="buttonPlay" />
+   </item>
+   <item row="1" column="1" >
+    <widget class="QPushButton" name="buttonStop" >
+     <property name="enabled" >
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2" >
+    <widget class="QPushButton" name="buttonPrev" />
+   </item>
+   <item row="1" column="3" >
+    <widget class="QPushButton" name="buttonNext" />
+   </item>
+   <item row="1" column="4" >
+    <widget class="QPushButton" name="buttonRepeat" >
+     <property name="icon" >
+      <iconset resource="Entrance.qrc" >
+       <normaloff>:/Entrance/Images/ni_png_2_0876.png</normaloff>:/Entrance/Images/ni_png_2_0876.png</iconset>
+     </property>
+     <property name="checkable" >
+      <bool>true</bool>
+     </property>
+     <property name="checked" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="5" >
+    <widget class="QPushButton" name="buttonPlaylist" >
+     <property name="icon" >
+      <iconset resource="Entrance.qrc" >
+       <normaloff>:/Entrance/Images/text_list_numbers.png</normaloff>:/Entrance/Images/text_list_numbers.png</iconset>
+     </property>
+     <property name="checkable" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="6" >
+    <widget class="QLabel" name="labelVolume" >
+     <property name="alignment" >
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="7" >
+    <widget class="QSlider" name="sliderVolume" >
+     <property name="sizePolicy" >
+      <sizepolicy vsizetype="Fixed" hsizetype="Preferred" >
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximum" >
+      <number>100</number>
+     </property>
+     <property name="value" >
+      <number>100</number>
+     </property>
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="8" >
+    <widget class="QListView" name="listView" >
+     <property name="editTriggers" >
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="selectionBehavior" >
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="selectionRectVisible" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="8" >
+    <widget class="WordDisplayer" name="wordDisplayer" >
+     <property name="minimumSize" >
+      <size>
+       <width>300</width>
+       <height>90</height>
+      </size>
+     </property>
+     <property name="maximumSize" >
+      <size>
+       <width>16777215</width>
+       <height>90</height>
+      </size>
+     </property>
+     <property name="readOnly" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>WordDisplayer</class>
+   <extends>QTextEdit</extends>
+   <header>WordDisplayer.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="Entrance.qrc" />
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonPlaylist</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>listView</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>340</x>
+     <y>133</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>387</x>
+     <y>239</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

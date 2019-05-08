@@ -1,0 +1,309 @@
+<ui version="4.0" >
+ <class>BatchImportDlgClass</class>
+ <widget class="QDialog" name="BatchImportDlgClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>921</width>
+    <height>624</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>编辑分组</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="Entrance.qrc" >
+    <normaloff>:/Entrance/Images/Package_02.png</normaloff>:/Entrance/Images/Package_02.png</iconset>
+  </property>
+  <layout class="QGridLayout" >
+   <item row="0" column="0" >
+    <layout class="QHBoxLayout" >
+     <item>
+      <widget class="QLabel" name="label_4" >
+       <property name="text" >
+        <string>组名</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEditGroupName" />
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="1" colspan="2" >
+    <widget class="QPushButton" name="buttonCopy" >
+     <property name="toolTip" >
+      <string>复制搜索词到组名</string>
+     </property>
+     <property name="icon" >
+      <iconset resource="Entrance.qrc" >
+       <normaloff>:/Entrance/Images/copy.png</normaloff>:/Entrance/Images/copy.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3" colspan="2" >
+    <widget class="QPushButton" name="buttonAppend" >
+     <property name="toolTip" >
+      <string>添加搜索词到组名</string>
+     </property>
+     <property name="icon" >
+      <iconset resource="Entrance.qrc" >
+       <normaloff>:/Entrance/Images/leftarrow.png</normaloff>:/Entrance/Images/leftarrow.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="5" >
+    <layout class="QHBoxLayout" >
+     <item>
+      <widget class="QLabel" name="label_5" >
+       <property name="text" >
+        <string>搜索</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEditSearch" />
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioAny" >
+       <property name="text" >
+        <string>任意</string>
+       </property>
+       <property name="checked" >
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioBegin" >
+       <property name="text" >
+        <string>开头</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioEnd" >
+       <property name="text" >
+        <string>结尾</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0" colspan="2" >
+    <widget class="SearchWidget" native="1" name="searchWidgetGroup" >
+     <property name="sizePolicy" >
+      <sizepolicy vsizetype="Expanding" hsizetype="Expanding" >
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2" colspan="2" >
+    <layout class="QVBoxLayout" >
+     <item>
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="buttonAll" >
+       <property name="enabled" >
+        <bool>false</bool>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>40</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text" >
+        <string>全选</string>
+       </property>
+       <property name="autoDefault" >
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="buttonImport" >
+       <property name="enabled" >
+        <bool>false</bool>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>40</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="icon" >
+        <iconset resource="Entrance.qrc" >
+         <normaloff>:/Entrance/Images/leftarrow.png</normaloff>:/Entrance/Images/leftarrow.png</iconset>
+       </property>
+       <property name="shortcut" >
+        <string>Left</string>
+       </property>
+       <property name="autoDefault" >
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="buttonDel" >
+       <property name="enabled" >
+        <bool>false</bool>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>40</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="icon" >
+        <iconset resource="Entrance.qrc" >
+         <normaloff>:/Entrance/Images/rightarrow.png</normaloff>:/Entrance/Images/rightarrow.png</iconset>
+       </property>
+       <property name="shortcut" >
+        <string>Right</string>
+       </property>
+       <property name="autoDefault" >
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="buttonOK" >
+       <property name="maximumSize" >
+        <size>
+         <width>40</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip" >
+        <string>保存</string>
+       </property>
+       <property name="icon" >
+        <iconset resource="Entrance.qrc" >
+         <normaloff>:/Entrance/Images/Floppy2.png</normaloff>:/Entrance/Images/Floppy2.png</iconset>
+       </property>
+       <property name="iconSize" >
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="default" >
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="buttonCancel" >
+       <property name="maximumSize" >
+        <size>
+         <width>40</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip" >
+        <string>取消</string>
+       </property>
+       <property name="icon" >
+        <iconset resource="Entrance.qrc" >
+         <normaloff>:/Entrance/Images/exit.png</normaloff>:/Entrance/Images/exit.png</iconset>
+       </property>
+       <property name="iconSize" >
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="autoDefault" >
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="4" colspan="2" >
+    <widget class="SearchWidget" native="1" name="searchWidgetSearch" >
+     <property name="sizePolicy" >
+      <sizepolicy vsizetype="Expanding" hsizetype="Expanding" >
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <customwidgets>
+  <customwidget>
+   <class>SearchWidget</class>
+   <extends>QWidget</extends>
+   <header>SearchWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="Entrance.qrc" />
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonOK</sender>
+   <signal>clicked()</signal>
+   <receiver>BatchImportDlgClass</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>434</x>
+     <y>537</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>419</x>
+     <y>408</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonCancel</sender>
+   <signal>clicked()</signal>
+   <receiver>BatchImportDlgClass</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>470</x>
+     <y>566</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>454</x>
+     <y>346</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

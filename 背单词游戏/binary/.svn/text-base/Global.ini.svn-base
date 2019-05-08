@@ -1,0 +1,4 @@
+[General]
+Mp3Dir=Mp3
+WavDir=Sound
+dbFileName=word.db

@@ -1,0 +1,8 @@
+1.在Linux系统中打开终端, 并输入g++ -c my_sql.cpp点击回车,
+    再输入g++ -c main.cpp点击回车,
+    接着输入g++ main.o my_sql.o -omy_sql
+    如果编译顺利则会生成一个my_sql可执行文件
+    然后终端输入./my_sql点击回车即可运行
+    
+2.如果编译报错,显示缺少mysql.h的库文件,则将mysql文件放在根目录下的user目录下的lib目录下
+然后再在终端输入main.o my_sql.o -omy_sql -L /usr/lib/mysql -lmysqlclient命令即可

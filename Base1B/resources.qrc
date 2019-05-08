@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/man.png</file>
+        <file>images/player.gif</file>
+        <file>images/background.jpg</file>
+        <file>images/long.jpg</file>
+        <file>images/man2.png</file>
+        <file>images/man1.png</file>
+        <file>config.txt</file>
+        <file>bgm/bgm.mp3</file>
+        <file>bgm/bgm2.mp3</file>
+    </qresource>
+</RCC>
