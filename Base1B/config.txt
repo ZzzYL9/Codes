@@ -1,6 +1,0 @@
-size = giant
-xCoordinate = 300
-velocity = 100
-background = long.jpg
-bgm = bgm.mp3
-player = man2.png
