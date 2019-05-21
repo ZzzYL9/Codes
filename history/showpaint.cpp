@@ -64,7 +64,7 @@ void ShowPaint::Paint(bool flag)
     int n=10;//n为数据个数
     int _ma=0;//数组里的最大值
 
-    for(int i=0;i<n;i++)
+    for(int i=0;i<Z.point_pa_group.size();i++)
     {
         if(Z.point_pa_group[i].pa>_ma){
             _ma=Z.point_pa_group[i].pa;
@@ -123,7 +123,7 @@ void ShowPaint::Paint(bool flag)
 
     int _ma1=0;//数组里的最大值
 
-    for(int i=0;i<n;i++)
+    for(int i=0;i<Z.point_tem1_group.size();i++)
     {
         if(Z.point_tem1_group[i].tem_1>_ma1){
             _ma1=Z.point_tem1_group[i].tem_1;
@@ -214,7 +214,7 @@ void ShowPaint::Paint_switch(bool flag)
     int _ma=0;//数组里的最大值
 
     if(count > 0&&count < num){
-        for(int i=count*10;i<(count+1)*10;i++)
+        for(int i=0;i<Z.point_pa_group.size();i++)
         {
             if(Z.point_pa_group[i].pa>_ma){
                 _ma=Z.point_pa_group[i].pa;
@@ -280,7 +280,7 @@ void ShowPaint::Paint_switch(bool flag)
         int n1=10;//n为数据个数
         int _ma1=0;//数组里的最大值
 
-        for(int i=count*10;i<(count+1)*10;i++)
+        for(int i=0;i<Z.point_tem1_group.size();i++)
         {
             if(Z.point_tem1_group[i].tem_1>_ma1){
                 _ma1=Z.point_tem1_group[i].tem_1;
@@ -332,9 +332,10 @@ void ShowPaint::Paint_switch(bool flag)
                              QString::number((int)(_maStep_2*(i+1))));
         }
 /**************************************************/
+
     }else if(count == num){
         int _ma1 = 0;
-        for(int i=count*10;i<count*10+leave;i++)
+        for(int i=0;i<Z.point_pa_group.size();i++)
         {
             if(Z.point_pa_group[i].pa>_ma1){
                 _ma1=Z.point_pa_group[i].pa;
@@ -394,7 +395,7 @@ void ShowPaint::Paint_switch(bool flag)
                              QString::number((int)(_maStep_1*(i+1))));
         }
 
-        for(int i=count*10;i<count*10+leave;i++)
+        for(int i=0;i<Z.point_tem1_group.size();i++)
         {
             if(Z.point_tem1_group[i].tem_1>_ma){
                 _ma=Z.point_tem1_group[i].tem_1;
@@ -444,6 +445,7 @@ void ShowPaint::Paint_switch(bool flag)
     }
 }
 
+
 ShowPaint::~ShowPaint()
 {
     delete ui;
@@ -452,6 +454,10 @@ ShowPaint::~ShowPaint()
 void ShowPaint::on_Btn_back_clicked()
 {
     count = 0;
+    Z.point_pa_group.clear();
+    Z.point_tem1_group.clear();
+    Z.point_tem2_group.clear();
+
     MainWindow *M = new MainWindow;
     this->hide();
     M->show();
